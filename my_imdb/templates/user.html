@@ -1,0 +1,117 @@
+{% load static%}
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.4.1.min.js'%} "></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %} "></script>
+        
+    
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %} " type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <style>
+            <style>
+                       
+            
+            @font-face{
+                font-family:ht;
+                src: url('fonts/ht.ttf')
+             }
+             
+               @font-face{
+                font-family:bg;
+                src: url('fonts/bg.ttf')
+             }
+              @font-face{
+                font-family:et;
+                src: url({% static 'fonts/et.ttf'%})
+             }
+            </style>
+        </style>
+    </head>
+    <body>
+        <body style="background-color:black">
+    <div class='row'>
+    <div class="offset-1 col-4">
+        <h1 style="font-family:et;color:red;letter-spacing: 4px;">
+            It's ShowTime!!!
+        </h1>
+        
+    </div>
+        <div style="margin-top:30px;"class='offset-5'>
+            <div class="btn-group btn-group-lg">
+ 
+   <button type="button" class="btn btn-lg btn-danger">Logout</button>
+    
+</div>
+            
+        </div>
+    </div><br><br>
+    <div style="border-color:white;border-width: 100px">
+        <center>
+            <img src="{% static 'img/nar.jpg'%}" alt="Profile pic" style="height:300px;width:300px; "class="img-fluid rounded-circle" id="i1">
+            <br><br> <label for="i1" id="p1" class="et"style="color:#fff;font-family: et"><h2 >{{u.username}}</h2></label>
+        </center>
+    </div> 
+    <br><br><br>
+    
+    <div class="container-fluid d-flex flex-column flex-lg-row justify-content-lg-around justify-content-center"style="color:#fff">
+          <div class="d-flex" style="margin-bottom: 50px;" >
+            <h3> Firstname:  {{u.firstname}} </h3>
+        </div>
+        <div class=" d-flex" >
+            <h3> Lastname:  {{u.lastname}}</h3>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="container-fluid d-flex flex-column flex-lg-row justify-content-around "style="color:#fff">
+        <h3 style="color:#fff">Email:  {{u.email}}</h3>
+   
+    </div><br><br><br>
+    <h2 style="color:red">
+        <center>Thank you for Joining us!!!</center>
+    </h2>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        </body>
+    
+    
+    
+    
+    
+    
+    
+</html>

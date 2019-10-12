@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Horror</title>
+        <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.4.1.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %} "></script>
+        
+    
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %} " type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            
+
+            
+            @font-face{
+                font-family:ht;
+                src: url({% static 'fonts/ht.ttf'%})
+             }
+             
+               @font-face{
+                font-family:bg;
+                src: url('fonts/bg.ttf')
+             }
+              @font-face{
+                font-family:et;
+                src: url('fonts/et.ttf')
+             }
+             
+             .ht{
+                 font-family: ht;
+                 margin:15px;
+                 
+             }
+            </style>
+    
+    </head>
+    <body style="background-color:black">
+    
+        <div style="margin-top:10px;"class='offset-10'>
+            <div class="btn-group ">
+  <button type="button" class="btn btn-danger">Login</button>
+   <button type="button" class="btn btn-danger">Signup</button>
+  
+</div>
+            
+        </div>
+   
+        <br>
+    <center> <div>
+        <h1 style="font-family:ht;color:red;letter-spacing: 4px;font-size:70px;">
+            HORROR...
+        </h1>
+        
+        </div></center>
+    <div style="margin:45px;" class="row">
+        
+  <div class="card ht" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/conj.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h1 class="card-title">The Conjuring</h1>
+      
+    </div>
+  </div>
+        <div class="card ht" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/wd.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+        <h1 class="card-title ">The Walking Dead</h1>
+      
+    </div>
+  </div>
+        <div class="card ht" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/an.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+        <h1 class="card-title ">Annabelle</h1>
+      
+    </div>
+  </div>
+    <div class="card ht " style="width:700px">
+    <img class="card-img-top"src="{% static 'img/scr.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+       <center> <h1 class="card-title ">SCREAM</h1></center>
+      
+    </div>
+    </div><div class="col-3">
+        <p class="ht"style="color:red;font-size:70px;">
+            Lights out time to SCREAM!!!!!
+        </p>
+    </div>
+    </div>
+    
+    </body>
+</html>

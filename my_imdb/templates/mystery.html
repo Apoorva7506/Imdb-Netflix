@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mystery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.4.1.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %} "></script>
+        
+    
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %} " type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            
+            
+            
+             .bg{
+                 
+                 margin:15px;
+                 color:#fff
+                 
+             }
+            
+                 
+             
+            </style>
+        
+        
+        
+    </head>
+    
+        <body style=" background: url({% static 'img/q1.jpg' %});
+     background-size: 100% 100%">
+    
+        
+        
+        <div style="margin-top:10px;" class='offset-10'>
+            <div>
+  <button type="button" class="btn btn-lg btn-light">Login</button>
+   <button type="button" class="btn btn-lg  btn-light">Signup</button>
+   
+</div>
+            
+        </div>
+   
+        <br>
+    <center> <div class='container'>
+        <center> <p style="background-color: rgba(0, 0, 0, 0.5);color:#fff;font-size:60px;" class="bg">
+           ???Mystery???
+            </p></div>
+        
+         <div style="margin:45px;" class="row">
+        
+  <div class="card bg" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/13.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body" style="background-color:#000">
+        <center>  <h1 class="card-title">Death note</h1></center>
+      
+    </div>
+  </div>
+        <div class="card bg" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/mur.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body" style="background-color:#000">
+        <center>     <h1 class="card-title ">Murder on the Orient Express</h1></center>
+      
+    </div>
+  </div>
+        <div class="card bg" style="width:400px">
+    <img class="card-img-top" src="{% static 'img/da.jpg' %}" alt="Card image" style="width:100%">
+     <div class="card-body" style="background-color:#000">
+         <center>  <h1 class="card-title ">Da Vinci Code</h1></center>
+      
+    </div>
+  </div>
+    <div class="card bg " style="width:700px">
+    <img class="card-img-top" src="{% static 'img/sher.jpg' %}" alt="Card image" style="width:100%">
+     <div class="card-body" style="background-color:#000">
+         <center>   <h1 class="card-title ">Sherlock</h1></center>
+      
+    </div>
+    </div><div class="col-4" style='padding-top:50px;'>
+        <center> <p style="background-color: rgba(0, 0, 0, 0.5);color:#fff;font-size:80px;" >
+         Can you find the culprit???
+            </p></center>
+            <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.5);color:#fff;"class="bg"> 
+    <h3>Comments:</h3>
+    <br><br>
+   {% for i in c %}
+    <ul>
+    
+    <li>
+    <h4>{{i.username}}</h4>
+    <br>{{i.comment}}</li>
+    <hr>
+    </ul>
+    {% endfor %}
+    
+    </div>
+    </div>
+    </div>
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </body>
+</html>
