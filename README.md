@@ -1,5 +1,5 @@
 # Imdb-Netflix-
-## CREATED FOR UNICODE LEARNING PERIOD
+## CREATED FOR UNICODE LEARNING PERIOD (Work in Progress)
 - Task 1 complete
 - light and dark mode added
 - input genre in url to get genre page
